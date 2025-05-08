@@ -40,14 +40,14 @@ class MainActivity : AppCompatActivity() {
                 if (sexo.trim() == "Homem") {
                     resultado = 65 - idade
 
-                    if (resultado < 65) { screen.textViewAposentadoria.text = "Faltam $resultado anos para você se aposentar!" }
+                    if (idade < 65) { screen.textViewAposentadoria.text = "Faltam $resultado anos para você se aposentar!" }
                     else { screen.textViewAposentadoria.text = "Você já pode se aposentar!" }
                 }
 
                 else if (sexo.trim() == "Mulher") {
                     resultado = 62 - idade
 
-                    if (resultado < 62) { screen.textViewAposentadoria.text = "Faltam $resultado anos para você se aposentar!" }
+                    if (idade < 62) { screen.textViewAposentadoria.text = "Faltam $resultado anos para você se aposentar!" }
                     else { screen.textViewAposentadoria.text = "Você já pode se aposentar!" }
                 }
 
