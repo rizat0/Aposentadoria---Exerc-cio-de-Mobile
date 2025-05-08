@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:padding="45dp">
+
+    <Spinner
+        android:id="@+id/spinnerSexo"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:padding="8dp" />
+
+    <EditText
+        android:id="@+id/editTextIdade"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:digits="0123456789"
+        android:hint="Insira sua idade..."
+        android:inputType="number"
+        android:maxLength="3"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <Button
+        android:id="@+id/buttonEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/lilac"
+        android:fontFamily="sans-serif-medium"
+        android:padding="15dp"
+        android:text="Calcular"
+        android:textColor="@color/white"
+        android:textSize="15dp"
+        app:icon="@drawable/baseline_arrow_forward_24"
+        app:iconGravity="textEnd" />
+
+    <TextView
+        android:id="@+id/textViewAposentadoria"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:padding="10dp"
+        android:text="Descubra quanto tempo falta para sua aposentadoria!"
+        android:gravity="center"
+        android:textColor="@color/purple"
+        android:textSize="16dp"
+        app:icon="@drawable/baseline_arrow_forward_24" />
+
+    <TextView
+        android:id="@+id/textViewNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/purple"
+        android:fontFamily="sans-serif-condensed-light"
+        android:padding="8dp"
+        android:text="Leticia Rizato"
+        android:textAlignment="center"
+        android:textColor="@color/purple"
+        android:textSize="16dp"
+        app:icon="@drawable/baseline_arrow_forward_24" />
+
+</LinearLayout>
